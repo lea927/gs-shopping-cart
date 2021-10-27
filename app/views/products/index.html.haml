@@ -1,0 +1,14 @@
+%table
+  %thead
+    %tr
+      %th Name
+      %th Price
+      %th Brand
+      %th Category
+  - @products.each do |product|
+    %tbody
+      %tr
+        %td= product.name
+        %td= product.price
+        %td= product.brand.name
+        %td= product.category.name
