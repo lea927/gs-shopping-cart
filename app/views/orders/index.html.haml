@@ -1,15 +1,15 @@
 .container.py-4
   %h1.pb-3.mb-4.border-bottom View Cart
-  %table
+  %table.table
     %thead
       %tr
         %th Name
         %th Price
     - @orders.each do |order|
       %tbody
-        %tr
+        %tr.table-info
           %td= order.name
           %td= order.price
           %td 
-            = link_to "Delete",order_path(order), method: 'delete', data: { confirm: 'Are you sure?' }
+            = link_to "Delete",order_path(order), method: 'delete', data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
   = link_to 'View Products',products_path, class: 'btn btn-warning btn-lg'
