@@ -1,0 +1,10 @@
+%table
+  %thead
+    %tr
+      %th Name
+      %th Price
+  - @orders.each do |order|
+    %tbody
+      %tr
+        %td= order.name
+        %td= order.price
