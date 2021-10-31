@@ -8,4 +8,6 @@
       %tr
         %td= order.name
         %td= order.price
+        %td 
+          = link_to "Delete",order_path(order), method: 'delete', data: { confirm: 'Are you sure?' }
 = link_to 'View Products',products_path
