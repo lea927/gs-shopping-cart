@@ -1,4 +1,4 @@
-%table
+%table.table
   %thead
     %tr
       %th Name
@@ -7,11 +7,11 @@
       %th Category
   - @products.each do |product|
     %tbody
-      %tr
+      %tr.table-info
         %td= product.name
         %td= product.price
         %td= product.brand.name
         %td= product.category.name
         %td
-          = link_to "Add to Cart", orders_path(name: product.name, price: product.price), method: :post     
-= link_to 'View Cart',cart_path
+          = link_to "Add to Cart", orders_path(name: product.name, price: product.price), method: :post, class: 'btn btn-warning'    
+= link_to 'View Cart',cart_path, class: 'btn btn-warning btn-lg'
