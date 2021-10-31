@@ -1,25 +1,9 @@
-# README
+# GS Shopping Cart
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- [Live](https://gs-shopping-cart-1.herokuapp.com/)
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# gs-shopping-cart
+- [Ruby on Rails](https://rubyonrails.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Postgresql](https://www.postgresql.org/)
