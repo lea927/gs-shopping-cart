@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'orders/index'
   get 'orders/new'
-  get 'orders/create'
+  post 'orders/create'
   get 'orders/destroy'
   root 'products#index' 
   get '/products', to: 'products#index'
