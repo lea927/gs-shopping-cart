@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'orders/index'
+  get '/cart', to: 'orders#index'
   get 'orders/new'
   post 'orders/create'
   get 'orders/destroy'
